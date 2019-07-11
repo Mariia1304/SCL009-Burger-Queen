@@ -1,6 +1,6 @@
 export const firebaseInit = () =>{
     // Your web app's Firebase configuration
-    var firebaseConfig = {
+   const firebaseConfig = {
         apiKey: "AIzaSyBU8BYRCtvSiZEzuzU9tyWNBEErB_OMTgQ",
         authDomain: "burger-queen-83603.firebaseapp.com",
         databaseURL: "https://burger-queen-83603.firebaseio.com",
