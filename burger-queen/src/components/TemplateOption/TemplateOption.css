@@ -1,0 +1,33 @@
+.btn-cocinero,.btn-mesero{
+    text-transform: uppercase;
+    padding: 30px 40px;
+    border-radius: 15px;
+    color:whitesmoke;
+}
+.btn-mesero{
+    background-color: #c98474;
+    
+}
+.btn-mesero:focus, .btn-mesero:hover{
+    background: #81554A;
+    color:whitesmoke;
+}
+.btn-cocinero:focus, .btn-cocinero:hover{
+    background: #9B8757;
+    color:whitesmoke;
+}
+.btn-cocinero{
+    background-color: #f2d388;
+}
+
+.mesero, .cocinero{
+    padding-top: 6em;
+}
+.mesero{
+    padding-right: 30px;
+    text-align: right;
+}
+.cocinero{
+    padding-left: 30px;
+    text-align: left;
+}

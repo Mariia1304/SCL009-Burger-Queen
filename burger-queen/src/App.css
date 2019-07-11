@@ -178,21 +178,3 @@ body{
     max-width: 60rem;
   }
 }
-/* HEADER */
-nav{
-  margin-top:.5em;
-}
-.navbar-brand{
- 
-  float: left;
-  margin-right: -15px;
-
-}
-nav h1{
-  margin: 0;
-  float: left;
-  text-align: center;
-  color: #874c62;
-  font-size: 60px;
-  font-family: 'Monofett';
-}

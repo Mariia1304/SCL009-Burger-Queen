@@ -1,0 +1,16 @@
+/* HEADER */
+.Header{
+    margin-top:.5em;
+}
+.Header a{
+    float: left;
+    margin-right: -15px;
+}
+.Header h1{
+    margin: 0;
+    float: left;
+    text-align: center;
+    color: #874c62;
+    font-size: 60px;
+    font-family: 'Monofett';
+}
