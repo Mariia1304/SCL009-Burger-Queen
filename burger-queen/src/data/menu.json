@@ -1,0 +1,101 @@
+{"menu":[
+    {"breakfast":[
+        {
+            "item": "Cafe americano",
+            "price": 500
+        },
+        {
+            "item": "Cafe con leche",
+            "price": 700
+        },
+        {
+            "item": "Sandwich de jamón y queso",
+            "price": 1000
+        },
+        {
+            "item": "Jugo natural",
+            "price": 700
+        }
+    ]},
+    {"lunch":[
+        {"hamburger":[
+            {
+                "item": "Hamburguesa simple",
+                "type": "res",
+                "price": 1500
+            },
+            {
+                "item": "Hamburguesa simple",
+                "type": "pollo",
+                "price": 1500
+            },
+            {
+                "item": "Hamburguesa simple",
+                "type": "veg",
+                "price": 1500
+            },
+            {
+                "item": "Hamburguesa doble",
+                "type": "res",
+                "price": 2500
+            },
+            {
+                "item": "Hamburguesa doble",
+                "type": "pollo",
+                "price": 2500
+            },
+            {
+                "item": "Hamburguesa doble",
+                "type": "veg",
+                "price": 2500
+            }
+        ]},
+        { "extra":[
+            {
+                "item": "queso",
+                "price": 500
+            },
+            {
+                "item": "huevo",
+                "price": 500
+            }
+        ]
+
+        },
+        {
+            "accompaniments":[
+                {
+                    "item": "papas fritas",
+                    "price": 500
+                },
+                {
+                    "item": "onion rihgs",
+                    "price": 500
+                }
+            ]
+        },
+        {
+            "drink":[
+                {
+                    "item": "Agua 500ml",
+                    "price": 500
+                },
+                {
+                    "item": "Agua 750ml",
+                    "price": 800
+                },
+                {
+                    "item": "Gaseosa 500ml",
+                    "price": 700
+                },
+                {
+                    "item": "Gaseosa 750ml",
+                    "price": 1000
+                }
+            ]
+        }
+    ]
+
+    }
+]
+}

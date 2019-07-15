@@ -5,6 +5,7 @@
     color:whitesmoke;
 }
 .btn-mesero{
+   
     background-color: #c98474;
     
 }
@@ -30,4 +31,9 @@
 .cocinero{
     padding-left: 30px;
     text-align: left;
+}
+.img-mesero, .img-cocinero{
+    height: 8em;
+    width: 8em;
+
 }
