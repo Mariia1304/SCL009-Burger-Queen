@@ -20,33 +20,28 @@
     {"lunch":[
         {"hamburger":[
             {
-                "item": "Hamburguesa simple",
-                "type": "res",
+                "item": "Hamburguesa simple res",
+               
                 "price": 1500
             },
             {
-                "item": "Hamburguesa simple",
-                "type": "pollo",
+                "item": "Hamburguesa simple pollo",
                 "price": 1500
             },
             {
-                "item": "Hamburguesa simple",
-                "type": "veg",
+                "item": "Hamburguesa simple veg",
                 "price": 1500
             },
             {
-                "item": "Hamburguesa doble",
-                "type": "res",
+                "item": "Hamburguesa doble res",
                 "price": 2500
             },
             {
-                "item": "Hamburguesa doble",
-                "type": "pollo",
+                "item": "Hamburguesa doble pollo",
                 "price": 2500
             },
             {
-                "item": "Hamburguesa doble",
-                "type": "veg",
+                "item": "Hamburguesa doble veg",
                 "price": 2500
             }
         ]},
