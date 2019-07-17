@@ -21,7 +21,6 @@
         {"hamburger":[
             {
                 "item": "Hamburguesa simple res",
-               
                 "price": 1500
             },
             {
@@ -64,7 +63,7 @@
                     "price": 500
                 },
                 {
-                    "item": "onion rihgs",
+                    "item": "onion rings",
                     "price": 500
                 }
             ]
