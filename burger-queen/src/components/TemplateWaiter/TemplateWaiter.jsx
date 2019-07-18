@@ -11,11 +11,11 @@ import Order from '../Order/Order';
                     <div className="container"  id="templateWaiter">
                         <div className="row">
                             <div className="col-6">
-                                <div className="row" >
+                                <div className="row margin">
                                     <div className="col-6 btn btn-desayuno">Desayuno</div>
                                     <div className="col-6 btn btn-almuerzo">Almuerzo</div>
                                 </div>
-                                <div className="row">
+                                <div className="row margin">
                                     <Breakfast/>
                                     <Lunch />
                                 </div>
@@ -25,7 +25,7 @@ import Order from '../Order/Order';
                                     <div className="col-12 btn btn-pedido">Pedido</div>
                                 </div>
                                 <div className="row">
-                                   <Order/>å
+                                   <Order/>
                                 </div>
                             </div>
                         </div>

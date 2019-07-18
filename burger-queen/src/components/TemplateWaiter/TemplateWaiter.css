@@ -1,5 +1,7 @@
 /* TemplatWaiter */
-
+.margin{
+    margin-right: -10px;
+}
 .btn-desayuno, .btn-almuerzo, .btn-pedido{
     font-size: 1.2em;
     font-family: 'Russo One', sans-serif;
@@ -73,4 +75,46 @@
 }
 .drinkBig{
     width: 60%;
+}
+/* pedido */
+.pedido{
+    background: #874c62;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.pedido__input{
+    border-radius: 5px;
+    width: 100%;
+}
+
+table{
+    font-size: 13px;
+    font-family: 'Russo One', sans-serif;
+    width: 100%;
+    color:whitesmoke;
+}
+.tableOrder{
+    margin-top:10px;
+}
+.nameItem{
+    width: 60%;
+}
+.quantityItem{
+    width:15%;
+}
+.priceTotalItem{
+   width:20%; 
+}
+.deleteItem{
+    width:5%; 
+}
+.total{
+    width: 85%;
+}
+.totalPriceOrder{
+    width: 15%;
+}
+.delete{
+    width: 100%;
 }
