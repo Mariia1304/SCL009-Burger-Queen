@@ -1,0 +1,1 @@
+const images = ['./img/coffee.svg',]

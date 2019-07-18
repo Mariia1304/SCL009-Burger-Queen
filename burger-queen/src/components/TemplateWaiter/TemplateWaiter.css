@@ -1,0 +1,76 @@
+/* TemplatWaiter */
+
+.btn-desayuno, .btn-almuerzo, .btn-pedido{
+    font-size: 1.2em;
+    font-family: 'Russo One', sans-serif;
+    color:#A7D2CB;
+    border: solid 1px;
+}
+
+.btn-desayuno{
+
+    border-color: #c98474;
+    background-color: #c98474;
+}
+.btn-almuerzo{
+    border-color:#874c62;
+    background-color: #874c62;
+}
+.btn-pedido{
+   
+    color: #874c62;
+    border-color:#f2d388;
+    background: #f2d388
+}
+/* menu desayuno */
+.desayuno{
+    background: #c98474;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.desayuno .row:last-child{
+    margin-bottom: 10px;
+}
+#btn1,#btn3{
+   text-align: right;
+   padding-right: 6px
+}
+#btn2,#btn4{
+    text-align: left;
+    padding-left: 6px
+ }
+.item{
+    width:  100%;
+    height:90%;
+    background: #f2d388;
+    margin-top:10px;
+}
+.coffee{
+    width: 25%;
+}
+.sandwich, .juice, .coffee-cup{
+    width: 30%;
+}
+.item p{
+    color:#6c3d4e;
+    font-family: 'Russo One', sans-serif;
+    font-size: .7em;
+}
+/* meny almuerzo */
+.almuerzo{
+    background: #874c62;
+    margin-top: 5px;
+    border-radius: 5px; 
+}
+.almuerzo .col-4{
+    padding:5px;
+}
+.almuerzo .col-3{
+    padding: 5px;
+}
+.hamburger, .egg, .cheese, .potatoes, .rings, .drink{
+    width: 45%;
+}
+.drinkBig{
+    width: 60%;
+}

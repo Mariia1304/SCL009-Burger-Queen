@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 class TemplateOption extends Component {
     render(){
         return(
-           
             <div className="container TemplateOption"  id="TemplateOption">
                 <div className="row">
                     <div className="col-6 mesero">
