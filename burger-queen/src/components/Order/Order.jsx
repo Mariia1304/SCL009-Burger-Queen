@@ -7,6 +7,7 @@ class Order extends Component{
             <div className="col-12 pedido container-fluid">   
             <input className="pedido__input" type="text" placeholder="Ingresa Nombre de Cliente"/>
             <table className="tableOrder">
+                <tbody>
                 <tr>
                     <td className="nameItem">Cafe americano</td>
                     <td className="quantityItem"> 2</td>
@@ -25,6 +26,7 @@ class Order extends Component{
                     <td className="priceTotalItem">2000</td>
                     <td className="deleteItem"><img className="img-fluid delete" src={images['delete5.png']} alt="delete"/></td>
                 </tr>
+                </tbody>
             </table>
             <table className="tableTotal">
                 <tr>
