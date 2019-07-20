@@ -1,95 +1,125 @@
-{"menu":[
+
     {"breakfast":[
-        {
-            "item": "Cafe americano",
-            "price": 500
-        },
-        {
-            "item": "Cafe con leche",
-            "price": 700
-        },
-        {
-            "item": "Sandwich de jamón y queso",
-            "price": 1000
-        },
-        {
-            "item": "Jugo natural",
-            "price": 700
-        }
-    ]},
-    {"lunch":[
-        {"hamburger":[
-            {
-                "item": "Hamburguesa simple res",
-                "price": 1500
-            },
-            {
-                "item": "Hamburguesa simple pollo",
-                "price": 1500
-            },
-            {
-                "item": "Hamburguesa simple veg",
-                "price": 1500
-            },
-            {
-                "item": "Hamburguesa doble res",
-                "price": 2500
-            },
-            {
-                "item": "Hamburguesa doble pollo",
-                "price": 2500
-            },
-            {
-                "item": "Hamburguesa doble veg",
-                "price": 2500
-            }
-        ]},
-        { "extra":[
-            {
-                "item": "queso",
-                "price": 500
-            },
-            {
-                "item": "huevo",
-                "price": 500
-            }
-        ]
-
-        },
-        {
+                    {
+                        "item": "Cafe americano",
+                        "price": 500,
+                        "image": "coffee.svg",
+                        "class":"img-fluid coffee"
+                        
+                    },
+                    {
+                        "item": "Cafe con leche",
+                        "price": 700,
+                        "image":"coffee-cup.svg",
+                        "class":"img-fluid coffee-cup"
+                    },
+                    {
+                        "item": "Sandwich de jamón y queso",
+                        "price": 1000, 
+                        "image":"sandwich.png",
+                        "class":"img-fluid sandwich"
+                    },
+                    {
+                        "item": "Jugo natural",
+                        "price": 700,
+                        "image": "orange-juice.svg",
+                        "class":"img-fluid juice"
+                    }
+                ],
+    "lunch":
+                {"hamburger":[
+                    {
+                        "item": "Hamburguesa simple res",
+                        "price": 1500,
+                        "image":"burgersimple.png",
+                        "class":"hamburger"
+                    },
+                    {
+                        "item": "Hamburguesa simple pollo",
+                        "price": 1500,
+                        "image":"burgersimple.png",
+                        "class":"hamburger"
+                    },
+                    {
+                        "item": "Hamburguesa simple veg",
+                        "price": 1500,
+                        "image":"burgersimple.png",
+                        "class":"hamburger"
+                    },
+                    {
+                        "item": "Hamburguesa doble res",
+                        "price": 2500,
+                        "image": "burger.png",
+                        "class":"hamburger"
+                    },
+                    {
+                        "item": "Hamburguesa doble pollo",
+                        "price": 2500,
+                        "image": "burger.png",
+                        "class":"img-fluid  hamburger"
+                    },
+                    {
+                        "item": "Hamburguesa doble veg",
+                        "price": 2500,
+                        "image": "burger.png",
+                        "class":"img-fluid hamburger"
+                    }
+                ],
+                 "extra":[
+                    {
+                        "item": "Extra Queso",
+                        "price": 500,
+                        "image": "cheese.png",
+                        "class": "img-fluid cheese"
+                    },
+                    {
+                        "item": "Extra Huevo",
+                        "price": 500,
+                        "image":"egg4.png",
+                        "class":"img-fluid egg"
+                    }
+                ],
+        
             "accompaniments":[
-                {
-                    "item": "papas fritas",
-                    "price": 500
-                },
-                {
-                    "item": "onion rings",
-                    "price": 500
-                }
-            ]
-        },
-        {
+                    {
+                        "item": "papas fritas",
+                        "price": 500,
+                        "image":"fried-potatoes.png",
+                        "class": "img-fluid potatoes"
+                    },
+                    {
+                        "item": "onion rings",
+                        "price": 500,
+                        "image":"onion-rings.png",
+                        "class":"img-fluid rings"
+                    }
+                ],
             "drink":[
-                {
-                    "item": "Agua 500ml",
-                    "price": 500
-                },
-                {
-                    "item": "Agua 750ml",
-                    "price": 800
-                },
-                {
-                    "item": "Gaseosa 500ml",
-                    "price": 700
-                },
-                {
-                    "item": "Gaseosa 750ml",
-                    "price": 1000
-                }
-            ]
-        }
-    ]
-
+                    {
+                        "item": "Agua 500ml",
+                        "price": 500,
+                        "image": "water.png",
+                        "class": "img-fluid drink"
+                    },
+                    {
+                        "item": "Agua 750ml",
+                        "price": 800,
+                        "image": "water.png",
+                        "class":"img-fluid drinkBig"
+                    },
+                    {
+                        "item": "Gaseosa 500ml",
+                        "price": 700,
+                        "image":"bottle.png",
+                        "class": "img-fluid drink"
+                    },
+                    {
+                        "item": "Gaseosa 750ml",
+                        "price": 1000,
+                        "image":"bottle.png",
+                        "class":"img-fluid drinkBig"
+                    }
+                ]
+            }
+            
     }
-]
-}

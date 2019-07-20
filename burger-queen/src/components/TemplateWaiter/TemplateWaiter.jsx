@@ -15,7 +15,7 @@ import Order from '../Order/Order';
         this.setState({
             showAndHide:true
         })
-    }
+    }  
     hideBreakfast(){
         this.setState({
             showAndHide:false

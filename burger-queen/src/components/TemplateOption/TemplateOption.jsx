@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import './TemplateOption.css';
 import Waiter from '../../img/iconomesero.png';
 import Chef from '../../img/iconococinero.png';
