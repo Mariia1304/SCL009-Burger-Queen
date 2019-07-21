@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import './Header.css';
 import logo from '../../logo.png';
+import { Link } from 'react-router-dom';
 class Header extends Component {
     render(){
         return(
             <div className="Header">
                 <div className="row">
-                    <a href="#">
-                        <img src={logo} width="90" height="60" alt="logo"/>  
-                    </a>
+                    
+                       <Link to='/'> <img src={logo} width="90" height="60" alt="logo"/></Link>  
+                    
                     <h1>Burger Queen</h1>
                 </div>  
             </div>
