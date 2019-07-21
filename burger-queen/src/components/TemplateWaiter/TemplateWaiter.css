@@ -18,11 +18,16 @@
     border-color:#874c62;
     background-color: #874c62;
 }
-.btn-pedido{
-   
+.btn-pedido,.btn-pedido:focus,.btn-pedido:hover{
     color: #874c62;
     border-color:#f2d388;
     background: #f2d388
+}
+.btn-desayuno:focus,.btn-desayuno:hover{
+    color:#874c62;
+}
+.btn-almuerzo:focus,.btn-almuerzo:hover{
+    color:#c98474;
 }
 /* menu desayuno */
 .desayuno{
@@ -87,7 +92,14 @@
     border-radius: 5px;
     width: 100%;
 }
-
+.btn-order{
+    font-family: 'Russo One', sans-serif;
+    background: #f2d388;
+    color:#874c62;
+}
+.btn-order:focus, .btn-order:hover{
+    color:#c98474;
+}
 table{
     font-size: 13px;
     font-family: 'Russo One', sans-serif;
