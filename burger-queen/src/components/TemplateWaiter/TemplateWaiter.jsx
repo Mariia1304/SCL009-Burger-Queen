@@ -5,23 +5,27 @@ import Lunch from '../Lunch/Lunch';
 import Order from '../Order/Order';
 
  class TemplateWaiter extends Component {
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
         this.state={
-            showAndHide: true
+            showBreakfast: true,
+            order:[]
         }
+        this.itemAndPriceToOrder = this.itemAndPriceToOrder(this);
     }
     hideLunch(){
         this.setState({
-            showAndHide:true
+            showBreakfast:true
         })
     }  
     hideBreakfast(){
         this.setState({
-            showAndHide:false
+            showBreakfast:false
         })
     }
-
+    itemAndPriceToOrder(itemToOrder,priceToOrder){
+        this.setState({order: this.state.order.concat([{item:itemToOrder, price:priceToOrder}])})
+    }
 
      render(){
      return(
@@ -36,7 +40,7 @@ import Order from '../Order/Order';
                                 </div>
                                 <div className="row margin">
                                 {
-                                    this.state.showAndHide?
+                                    this.state.showBreakfast?
                                     <Breakfast/>
                                     :<Lunch/>
                                 }
@@ -48,7 +52,7 @@ import Order from '../Order/Order';
                                     <div className="col-12 btn btn-pedido">Pedido</div>
                                 </div>
                                 <div className="row">
-                                   <Order/>
+                                   <Order order={this.state.order}/>
                                 </div>
                             </div>
                         </div>
