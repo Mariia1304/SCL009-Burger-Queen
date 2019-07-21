@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import './Order.css';
-import images from '../../importImages';
+
 import OrderItem from '../OrderItem/OrderItem'
 class Order extends Component{
     // constructor(props){
@@ -13,13 +13,8 @@ class Order extends Component{
             <input className="pedido__input" type="text" placeholder="Ingresa Nombre de Cliente"/>
             <table className="tableOrder">
                 <tbody>
-                <tr>
-
-                    <td className="nameItem">Cafe americano</td>
-                    <td className="quantityItem"> 2</td>
-                    <td className="priceTotalItem">1000</td>
-                    <td className="deleteItem"><img className="img-fluid delete" src={images['delete5.png']} alt="delete"/></td>
-                </tr>
+                   {this.props.order.map(el=> <OrderItem item={el.item} price={el.price}  />)}
+              
              
                 </tbody>
             </table>
