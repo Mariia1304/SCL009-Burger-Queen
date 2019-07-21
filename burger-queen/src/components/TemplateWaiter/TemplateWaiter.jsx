@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import './TemplateWaiter.css';
-// import Breakfast from '../Breakfast/Breakfast';
-// import Lunch from '../Lunch/Lunch';
 import Order from '../Order/Order';
-import  Menu  from '../../data/menu';
-import Button from '../Button/Button'
+import Breakfast from '../Breakfast/Breakfast';
+import Lunch from '../Lunch/Lunch';
 
  class TemplateWaiter extends Component {
     constructor(props){
@@ -43,27 +41,8 @@ import Button from '../Button/Button'
                                 <div className="row margin">
                                 {
                                     this.state.showBreakfast?
-                                    <div className="desayuno col-12">
-                                    <div className="row">
-                                        {Menu.breakfast.map(el=><div className="col-6"><Button key={el.item} class={el.class} image={el.image} price={el.price} item={el.item} itemAndPriceToOrder={this.itemAndPriceToOrder}  /></div>)}
-                                    </div>
-                                </div>
-                                    :<div className="almuerzo col-12">
-                                    <div className="row">
-                                   
-                                    {Menu.lunch.hamburger.map(el=><div className="col-4"><Button key={el.item} class={el.class} image={el.image} price={el.price} item={el.item} itemAndPriceToOrder={this.itemAndPriceToOrder}/> </div>)}
-                                    </div>
-                                    <div className="row">
-                                        {Menu.lunch.extra.map(el=><div className="col-6"><Button key={el.item}  class={el.class} image={el.image} price={el.price} item={el.item} itemAndPriceToOrder={this.itemAndPriceToOrder}/> </div>)}
-                                       
-                                    </div>
-                                    <div className="row">
-                                    {Menu.lunch.accompaniments.map(el=><div className="col-6"><Button key={el.item}  class={el.class} image={el.image} price={el.price} item={el.item} itemAndPriceToOrder={this.itemAndPriceToOrder}/> </div>)}
-                                    </div>
-                                    <div className="row">
-                                    {Menu.lunch.drink.map(el=><div className="col-3"><Button key={el.item} class={el.class} image={el.image} price={el.price} item={el.item} itemAndPriceToOrder={this.itemAndPriceToOrder}/> </div>)}
-                                    </div>
-                                </div>
+                                    <Breakfast itemAndPriceToOrder={this.itemAndPriceToOrder}/>
+                                    :<Lunch itemAndPriceToOrder={this.itemAndPriceToOrder} />
                                 }
 
                                 </div>
