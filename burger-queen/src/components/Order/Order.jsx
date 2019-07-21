@@ -1,7 +1,12 @@
 import React, { Component} from 'react';
 import './Order.css';
 import images from '../../importImages';
+import OrderItem from '../OrderItem/OrderItem'
 class Order extends Component{
+    // constructor(props){
+    //     super(props);
+
+    // }
     render(){
         return(
             <div className="col-12 pedido container-fluid">   
@@ -9,23 +14,13 @@ class Order extends Component{
             <table className="tableOrder">
                 <tbody>
                 <tr>
+
                     <td className="nameItem">Cafe americano</td>
                     <td className="quantityItem"> 2</td>
                     <td className="priceTotalItem">1000</td>
                     <td className="deleteItem"><img className="img-fluid delete" src={images['delete5.png']} alt="delete"/></td>
                 </tr>
-                <tr>
-                    <td className="nameItem">Jugo natural</td>
-                    <td className="quantityItem"> 2</td>
-                    <td className="priceTotalItem"> 1400</td>
-                    <td className="deleteItem"><img className="img-fluid delete" src={images['delete5.png']} alt="delete"/></td>
-                </tr>
-                <tr>
-                    <td className="nameItem">Sandwich de jamon con queso</td>
-                    <td className="quantityItem"> 2</td>
-                    <td className="priceTotalItem">2000</td>
-                    <td className="deleteItem"><img className="img-fluid delete" src={images['delete5.png']} alt="delete"/></td>
-                </tr>
+             
                 </tbody>
             </table>
             <table className="tableTotal">
@@ -34,6 +29,7 @@ class Order extends Component{
                     <td className="totalPriceOrder">4400</td>
                 </tr>
             </table>
+            <button className="btn btn-order">Enviar pedido</button>
         </div>
         )
     }
