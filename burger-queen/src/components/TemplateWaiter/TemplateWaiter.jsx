@@ -12,6 +12,7 @@ import Lunch from '../Lunch/Lunch';
             order:[]
         };
         this.itemAndPriceToOrder = this.itemAndPriceToOrder.bind(this);
+        
     }
     hideLunch(){
         this.setState({
@@ -23,10 +24,28 @@ import Lunch from '../Lunch/Lunch';
             showBreakfast:false
         })
     }
+    notFound(order, itemToOrder, priceToOrder) {
+        const { length } = order;
+        //console.log(length)
+        const id = length + 1;
+        const found = order.some(el => el.item === itemToOrder);
+        if (found) order.some(el=>{
+            if( el.item === itemToOrder){
+            el.price= el.price+priceToOrder;
+            el.quantity++;}
+        })
+        if (!found) order.push({id: id, item: itemToOrder, price: priceToOrder, quantity: 1})
+        return order;
+    }
     itemAndPriceToOrder(itemToOrder,priceToOrder){
-        this.setState({order: this.state.order.concat([{item: itemToOrder, price: priceToOrder}])})
+        let notFound = this.notFound(this.state.order, itemToOrder, priceToOrder);
+        // console.log("NOTFOUND:", this.notFound(this.state.order, itemToOrder, priceToOrder))
+        // if(!notFound){
+        this.setState({order: notFound});
+        // }
     }
 
+    
      render(){
      return(
              <React.Fragment>

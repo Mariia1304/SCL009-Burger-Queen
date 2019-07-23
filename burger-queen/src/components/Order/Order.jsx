@@ -3,17 +3,14 @@ import './Order.css';
 
 import OrderItem from '../OrderItem/OrderItem'
 class Order extends Component{
-    // constructor(props){
-    //     super(props);
-
-    // }
+   
     render(){
         return(
             <div className="col-12 pedido container-fluid">   
             <input className="pedido__input" type="text" placeholder="Ingresa Nombre de Cliente"/>
             <table className="tableOrder">
                 <tbody>
-                   {this.props.order.map(el=> <OrderItem item={el.item} price={el.price}  />)}
+                   {this.props.order.map(el=> <OrderItem item={el.item} price={el.price} quantity={el.quantity}  />)}
               
              
                 </tbody>

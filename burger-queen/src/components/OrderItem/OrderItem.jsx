@@ -7,7 +7,7 @@ class OrderItem extends Component{
         return(
             <tr>
                 <td className="nameItem">{this.props.item}</td>
-                {/* //<td className="quantityItem"> 2</td> */}
+                <td className="quantityItem">{this.props.quantity}</td>
                 <td className="priceTotalItem">{this.props.price}</td>
                 <td className="deleteItem"><img className="img-fluid delete" src={images['delete5.png']} alt="delete"/></td>
             </tr>
