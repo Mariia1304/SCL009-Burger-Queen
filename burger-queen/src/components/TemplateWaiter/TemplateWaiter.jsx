@@ -9,9 +9,11 @@ import Lunch from '../Lunch/Lunch';
         super(props);
         this.state={
             showBreakfast: true,
-            order:[]
+            order:[],
+            total: 0
         };
         this.itemAndPriceToOrder = this.itemAndPriceToOrder.bind(this);
+        this.deleteItem = this.deleteItem.bind(this);
         
     }
     hideLunch(){
@@ -24,28 +26,48 @@ import Lunch from '../Lunch/Lunch';
             showBreakfast:false
         })
     }
-    notFound(order, itemToOrder, priceToOrder) {
+    addToOrder(order, itemToOrder, priceToOrder) {
         const { length } = order;
-        //console.log(length)
         const id = length + 1;
         const found = order.some(el => el.item === itemToOrder);
         if (found) order.some(el=>{
-            if( el.item === itemToOrder){
-            el.price= el.price+priceToOrder;
+            if(el.item === itemToOrder){
+            el.price = el.price+priceToOrder;
             el.quantity++;}
         })
         if (!found) order.push({id: id, item: itemToOrder, price: priceToOrder, quantity: 1})
         return order;
     }
+    total(total, priceToOrder){
+            total = total + priceToOrder;
+       return total
+    }
     itemAndPriceToOrder(itemToOrder,priceToOrder){
-        let notFound = this.notFound(this.state.order, itemToOrder, priceToOrder);
-        // console.log("NOTFOUND:", this.notFound(this.state.order, itemToOrder, priceToOrder))
-        // if(!notFound){
-        this.setState({order: notFound});
-        // }
+        let addToOrder = this.addToOrder(this.state.order, itemToOrder, priceToOrder);
+        let totalToOrder = this.total(this.state.total, priceToOrder);
+        this.setState({total:totalToOrder});
+        this.setState({order: addToOrder});
+    }
+    deleteItem(itemId){
+        let total = this.state.total;
+       let newOrder = [...this.state.order];
+        for( let i = 0; i<newOrder.length; i++){
+            if ( newOrder[i].id === itemId){
+                if(newOrder[i].quantity===1){
+                total = total - newOrder[i].price;
+                newOrder.splice(i, 1);
+                }else{
+                    newOrder[i].price = newOrder[i].price-(newOrder[i].price/newOrder[i].quantity);
+                    newOrder[i].quantity--;
+                    total = total - (newOrder[i].price/newOrder[i].quantity);
+                    
+                }
+            }
+        }
+        this.setState({order:newOrder});
+        this.setState({total:total})
     }
 
-    
      render(){
      return(
              <React.Fragment>
@@ -71,7 +93,7 @@ import Lunch from '../Lunch/Lunch';
                                     <div className="col-12 btn btn-pedido">Pedido</div>
                                 </div>
                                 <div className="row">
-                                   <Order order={this.state.order}/>
+                                   <Order order={this.state.order} total={this.state.total} deleteItem={this.deleteItem}/>
                                 </div>
                             </div>
                         </div>

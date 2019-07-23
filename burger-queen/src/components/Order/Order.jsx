@@ -10,7 +10,7 @@ class Order extends Component{
             <input className="pedido__input" type="text" placeholder="Ingresa Nombre de Cliente"/>
             <table className="tableOrder">
                 <tbody>
-                   {this.props.order.map(el=> <OrderItem item={el.item} price={el.price} quantity={el.quantity}  />)}
+                   {this.props.order.map(el=> <OrderItem key={el.id} id={el.id} item={el.item} price={el.price} quantity={el.quantity} deleteItem={this.props.deleteItem}  />)}
               
              
                 </tbody>
@@ -18,7 +18,7 @@ class Order extends Component{
             <table className="tableTotal">
                 <tr>
                     <td className="total">Total:</td>
-                    <td className="totalPriceOrder">4400</td>
+                    <td className="totalPriceOrder">{this.props.total}</td>
                 </tr>
             </table>
             <button className="btn btn-order">Enviar pedido</button>

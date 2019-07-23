@@ -9,7 +9,7 @@ class OrderItem extends Component{
                 <td className="nameItem">{this.props.item}</td>
                 <td className="quantityItem">{this.props.quantity}</td>
                 <td className="priceTotalItem">{this.props.price}</td>
-                <td className="deleteItem"><img className="img-fluid delete" src={images['delete5.png']} alt="delete"/></td>
+                <td className="deleteItem" onClick={()=>this.props.deleteItem(this.props.id)}><img className="img-fluid delete" src={images['delete5.png']} alt="delete"/></td>
             </tr>
         )
     }
