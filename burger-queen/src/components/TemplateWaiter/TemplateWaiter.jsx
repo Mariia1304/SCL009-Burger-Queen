@@ -10,10 +10,12 @@ import Lunch from '../Lunch/Lunch';
         this.state={
             showBreakfast: true,
             order:[],
-            total: 0
+            total: 0,
+            name: ""
         };
         this.itemAndPriceToOrder = this.itemAndPriceToOrder.bind(this);
         this.deleteItem = this.deleteItem.bind(this);
+        this.handleChange= this.handleChange.bind(this);
         
     }
     hideLunch(){
@@ -67,7 +69,14 @@ import Lunch from '../Lunch/Lunch';
         this.setState({order:newOrder});
         this.setState({total:total})
     }
-
+    handleChange (e) {
+        const name = e.target.name;
+        const value = e.target.value;
+        console.log(value);
+        this.setState({
+          [name]: value
+        })
+      };
      render(){
      return(
              <React.Fragment>
@@ -93,7 +102,7 @@ import Lunch from '../Lunch/Lunch';
                                     <div className="col-12 btn btn-pedido">Pedido</div>
                                 </div>
                                 <div className="row">
-                                   <Order order={this.state.order} total={this.state.total} deleteItem={this.deleteItem}/>
+                                   <Order order={this.state.order} name={this.state.name} handleChange={this.handleChange} total={this.state.total} deleteItem={this.deleteItem}/>
                                 </div>
                             </div>
                         </div>
