@@ -3,6 +3,7 @@ import './TemplateWaiter.css';
 import Order from '../Order/Order';
 import Breakfast from '../Breakfast/Breakfast';
 import Lunch from '../Lunch/Lunch';
+import { db } from '../../config/firebase'
 
  class TemplateWaiter extends Component {
     constructor(props){
@@ -73,13 +74,28 @@ import Lunch from '../Lunch/Lunch';
     handleChange (e) {
        
         const value = e.target.value;
-        console.log(value);
+       
         this.setState({
           name: value
         })
       };
     submitToFirestore(){
-        alert("hola")
+        let idOrder = "id"+Date.now();
+        let data = {
+           id: idOrder,
+           name: this.state.name,
+           orderList: this.state.order,
+           total: this.state.total,
+           date: Date.now(),
+           stateOrder: false
+        }
+     
+        db.collection("orders").doc(idOrder).set(data)
+        .then(()=>{
+            this.setState({
+                name: ""
+            })
+        })
     }
      render(){
      return(
