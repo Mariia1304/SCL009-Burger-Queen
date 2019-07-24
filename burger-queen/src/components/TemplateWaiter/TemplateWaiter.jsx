@@ -3,7 +3,8 @@ import './TemplateWaiter.css';
 import Order from '../Order/Order';
 import Breakfast from '../Breakfast/Breakfast';
 import Lunch from '../Lunch/Lunch';
-import { db } from '../../config/firebase'
+import { db } from '../../config/firebase';
+import swal from '@sweetalert/with-react'
 
  class TemplateWaiter extends Component {
     constructor(props){
@@ -18,6 +19,7 @@ import { db } from '../../config/firebase'
         this.deleteItem = this.deleteItem.bind(this);
         this.handleChange= this.handleChange.bind(this);
         this.submitToFirestore=this.submitToFirestore.bind(this);
+        this.clearOrder=this.clearOrder.bind(this)
         
     }
     hideLunch(){
@@ -78,8 +80,12 @@ import { db } from '../../config/firebase'
         this.setState({
           name: value
         })
-      };
+    };
     submitToFirestore(){
+        if(this.state.name===""||this.state.total===0){
+            swal(<div><h1>Pedido NO fue enviado</h1>
+            <h5>Quizas no pusiste el nobre de cliente, o pedido está vacío</h5></div>)
+        }else{
         let idOrder = "id"+Date.now();
         let data = {
            id: idOrder,
@@ -91,10 +97,18 @@ import { db } from '../../config/firebase'
         }
      
         db.collection("orders").doc(idOrder).set(data)
-        .then(()=>{
-            this.setState({
-                name: ""
-            })
+            .then(()=>{
+            swal("Pedido enviado a la cocina", "success")
+            this.clearOrder()
+             })
+            .catch((err)=>console.log(err))
+        }
+    }
+    clearOrder(){
+        this.setState({
+            order:[],
+            name: "",
+            total: 0
         })
     }
      render(){
