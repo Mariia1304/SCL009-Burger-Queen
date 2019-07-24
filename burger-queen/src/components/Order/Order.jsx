@@ -21,7 +21,7 @@ class Order extends Component{
                     <td className="totalPriceOrder">{this.props.total}</td>
                 </tr>
             </table>
-            <button className="btn btn-order">Enviar pedido</button>
+            <button className="btn btn-order" onClick={()=>this.props.submitToFirestore()}>Enviar pedido</button>
         </div>
         )
     }

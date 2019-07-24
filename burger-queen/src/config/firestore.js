@@ -1,6 +1,7 @@
-export const firebaseInit = () =>{
+import firebase from 'firebase';
+
     // Your web app's Firebase configuration
-   const firebaseConfig = {
+    const firebaseApp = firebase.initializeApp({
         apiKey: "AIzaSyBU8BYRCtvSiZEzuzU9tyWNBEErB_OMTgQ",
         authDomain: "burger-queen-83603.firebaseapp.com",
         databaseURL: "https://burger-queen-83603.firebaseio.com",
@@ -8,7 +9,7 @@ export const firebaseInit = () =>{
         storageBucket: "burger-queen-83603.appspot.com",
         messagingSenderId: "843571810296",
         appId: "1:843571810296:web:b1315afb914f6a98"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-}
+    });
+const db = firebaseApp.firestore();
+   
+export { db }
