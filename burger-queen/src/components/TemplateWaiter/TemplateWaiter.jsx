@@ -83,8 +83,7 @@ import swal from '@sweetalert/with-react'
     };
     submitToFirestore(){
         if(this.state.name===""||this.state.total===0){
-            swal(<div><h1>Pedido NO fue enviado</h1>
-            <h5>Quizas no pusiste el nobre de cliente, o pedido está vacío</h5></div>)
+            swal("Pedido no fue enviado", "Revisa si está el nombre de cliente y pedido no está vacío", "error")
         }else{
         let idOrder = "id"+Date.now();
         let data = {
@@ -98,10 +97,12 @@ import swal from '@sweetalert/with-react'
      
         db.collection("orders").doc(idOrder).set(data)
             .then(()=>{
-            swal("Pedido enviado a la cocina", "success")
+            swal("Pedido enviado a la cocina","", "success")
             this.clearOrder()
              })
-            .catch((err)=>console.log(err))
+            .catch((err)=>{
+                swal("algo salio mal","", "error")
+                console.log(err)})
         }
     }
     clearOrder(){
