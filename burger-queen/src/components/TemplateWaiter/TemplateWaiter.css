@@ -2,7 +2,7 @@
 .margin{
     margin-right: -10px;
 }
-.btn-desayuno, .btn-almuerzo, .btn-pedido{
+.btn-desayuno, .btn-almuerzo, .btn-pedido, .btn-estado{
     font-size: 1.2em;
     font-family: 'Russo One', sans-serif;
     color:#A7D2CB;
@@ -18,10 +18,22 @@
     border-color:#874c62;
     background-color: #874c62;
 }
-.btn-pedido,.btn-pedido:focus,.btn-pedido:hover{
+.btn-pedido{
+    border-color: #c98474;
+    background: #c98474;
+    color:#A7D2CB;
+   
+}
+.btn-estado{
+    color:#A7D2CB;
+    border-color:#874c62;
+    background: #874c62
+}
+.btn-estado:focus, .btn-estado:hover{
+    color: #c98474;
+}
+.btn-pedido:focus, .btn-pedido:hover{
     color: #874c62;
-    border-color:#f2d388;
-    background: #f2d388
 }
 .btn-desayuno:focus,.btn-desayuno:hover{
     color:#874c62;
@@ -130,3 +142,4 @@ table{
 .delete{
     width: 100%;
 }
+/* estado de pedidos */
