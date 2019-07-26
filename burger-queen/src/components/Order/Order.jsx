@@ -11,8 +11,6 @@ class Order extends Component{
             <table className="tableOrder">
                 <tbody>
                    {this.props.order.map(el=> <OrderItem key={el.id} id={el.id} item={el.item} price={el.price} quantity={el.quantity} deleteItem={this.props.deleteItem}  />)}
-              
-             
                 </tbody>
             </table>
             <table className="tableTotal">

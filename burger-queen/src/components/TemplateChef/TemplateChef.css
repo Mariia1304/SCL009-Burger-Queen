@@ -1,0 +1,32 @@
+.btn-pedidosChef{
+    margin-top:1em;
+    margin-bottom: 1em;
+    background:#874c62;
+    font-size: 1.2em;
+    font-family: 'Russo One', sans-serif;
+    color:#A7D2CB;
+    border: solid 1px;
+}
+.btn-pedidosChef:hover,.btn-pedidosChef:focus{
+    color:#c98474
+}
+.btn-chef{
+    text-align: center;
+}
+.order-chef-items{
+    font-family: 'Russo One', sans-serif;
+    background:#874c62;
+    border-radius:5px;
+    border:solid 1px #874c62;;
+    padding:5px;
+}
+.btn-listo{
+    color:#874c62;
+    background: #f2d388;
+}
+.btn-listo:focus, .btn-listo:hover{
+    color:#c98474;
+}
+.order-chef-items h6{
+    color: whitesmoke;
+}
