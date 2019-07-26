@@ -74,15 +74,17 @@ Implementación de la interfaz
 - Creación de template, de acuerdo a las vistas a utilizar.
 - Manejo de estilos CSS pensado en mobile first; usando react bootstrap.
 - Implementación de code review.
-- Trabajo respaldado mediante el uso de Git y GitHub, realizando realeses por historia de usuarios.
+- Trabajo respaldado mediante el uso de Git y GitHub.
 - Deploy con gh-pages de la aplicación Burger Queen.
 
 ## Futuras mejoras ⌨️
+ - Implementación de pruebas de usabilidad.
+ - Desarrollar la funcionalidad de actualización de los estados del pedido, para que el cocinero pueda informar al mesero  y este pueda entregar a tiempo los mismos.
 
 
 ## Autoras 📌
 Maria Chernysheva
 
-Dharma 
+Dharma Herrera
 
 Betsi Salas
