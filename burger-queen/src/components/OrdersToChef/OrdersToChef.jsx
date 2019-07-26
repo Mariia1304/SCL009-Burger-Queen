@@ -1,25 +1,45 @@
 import React, { Component } from 'react';
 import './OrdersToChef.css';
+import { db } from '../../config/firebase';
 
 class OrderToChef extends Component{
+    state={
+        orders:[]
+    }
+    componentDidMount(){
+        db.collection('orders').get().then((snapShots)=>{
+            this.setState({
+                orders: snapShots.docs.map(doc=>{
+                    //console.log(doc.data());
+                    return{id:doc.id,data:doc.data()}
+                })
+            })
+        })
+    }
     render(){
+        const { orders } = this.state;
         return(
-        <React.Fragment>
-            <div className="order-chef-items">
+       
+             orders && orders !== undefined?orders.map((order, key)=>(
+                <div key={order.id} className="order-chef-items">
                 <div className="row">
                     <div className="col-6">
-                        <h6>Nombre de cliente:</h6>
+                        <h6>Nombre de cliente:{order.data.name}</h6>
                     </div>
                     <div className="col-6">
-                        <h6>Fecha:</h6>
+                        <h6>Fecha:{order.data.date}</h6>
                     </div>
                 </div>
                 <table className="col-4">
                     <tbody>
+                    {
+                        order.data.orderList.map(el=>
                         <tr>
-                            <td>Hamburguesa con res</td>
-                            <td>1</td>
+                            <td>{el.item}</td>
+                            <td>{el.quantity}</td>
                         </tr>
+                        ) 
+                    }
                     </tbody>
                 </table>
                 <div className="row">
@@ -30,7 +50,9 @@ class OrderToChef extends Component{
                     </div>
                 </div>
             </div>
-        </React.Fragment>
+            )):<div></div>
+            
+       
         )
     }
 }

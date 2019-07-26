@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { db } from '../../config/firebase';
+//import { db } from '../../config/firebase';
 import './TemplateChef.css';
 import OrderToChef from '../OrdersToChef/OrdersToChef';
 class TemplateChef extends Component{
@@ -7,8 +7,10 @@ class TemplateChef extends Component{
         super(props);
         this.state={
             showOrderToChef:false
+            
         }
     }
+   
     showOrders(){
         this.setState({
             showOrderToChef:true
