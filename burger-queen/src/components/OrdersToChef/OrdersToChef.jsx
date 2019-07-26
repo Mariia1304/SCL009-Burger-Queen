@@ -7,10 +7,10 @@ class OrderToChef extends Component{
         orders:[]
     }
     componentDidMount(){
-        db.collection('orders').get().then((snapShots)=>{
+        db.collection('orders').where('stateOrder','==', false).orderBy("date","asc").limit(10)
+            .get().then((snapShots)=>{
             this.setState({
-                orders: snapShots.docs.map(doc=>{
-                    //console.log(doc.data());
+                    orders: snapShots.docs.map(doc=>{
                     return{id:doc.id,data:doc.data()}
                 })
             })
@@ -20,14 +20,14 @@ class OrderToChef extends Component{
         const { orders } = this.state;
         return(
        
-             orders && orders !== undefined?orders.map((order, key)=>(
+             orders && orders !== undefined?orders.map((order)=>(
                 <div key={order.id} className="order-chef-items">
                 <div className="row">
                     <div className="col-6">
-                        <h6>Nombre de cliente:{order.data.name}</h6>
+                        <h6>Nombre de cliente: {order.data.name}</h6>
                     </div>
                     <div className="col-6">
-                        <h6>Fecha:{order.data.date}</h6>
+                        <h6>{new Date(order.data.date).toLocaleString()}</h6>
                     </div>
                 </div>
                 <table className="col-4">
