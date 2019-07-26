@@ -22,6 +22,7 @@ import OrderState from '../OrderState/OrderState'
         this.handleChange= this.handleChange.bind(this);
         this.submitToFirestore=this.submitToFirestore.bind(this);
         this.clearOrder=this.clearOrder.bind(this);
+
         
         
     }
@@ -49,7 +50,7 @@ import OrderState from '../OrderState/OrderState'
         const { length } = order;
         const id = length + 1;
         const found = order.some(el => el.item === itemToOrder);
-        if (found) order.some(el=>{
+        if (found) order.forEach(el=>{
             if(el.item === itemToOrder){
             el.price = el.price+priceToOrder;
             el.quantity++;}
@@ -131,10 +132,10 @@ import OrderState from '../OrderState/OrderState'
                 <section id="main">
                     <div className="container"  id="templateWaiter">
                         <div className="row">
-                            <div className="col-6">
+                            <div className="col-md-6 col-sm-12 col-xs-12">
                                 <div className="row margin">
-                                    <div className="col-6 btn btn-desayuno" onClick={()=>this.hideLunch()}>Desayuno</div>
-                                    <div className="col-6 btn btn-almuerzo"onClick={()=>this.hideBreakfast()}>Almuerzo</div>
+                                    <div className="col-md-6 col-sm-12 col-xs-12 btn btn-desayuno" onClick={()=>this.hideLunch()}>Desayuno</div>
+                                    <div className="col-md-6 col-sm-12 col-xs-12 btn btn-almuerzo"onClick={()=>this.hideBreakfast()}>Almuerzo</div>
                                 </div>
                                 <div className="row margin">
                                 {
@@ -145,16 +146,16 @@ import OrderState from '../OrderState/OrderState'
 
                                 </div>
                             </div>
-                            <div className="col-6">
+                            <div className="col-md-6 col-sm-12 col-xs-12">
                                 <div className="row margin">
-                                    <div className="col-6 btn btn-pedido"onClick={()=>this.hideOrderState()}>Pedido</div>
-                                    <div className="col-6 btn btn-estado"onClick={()=>this.hideOrder()}>Estado</div>
+                                    <div className="col-md-6 col-sm-12 col-xs-12 btn btn-pedido"onClick={()=>this.hideOrderState()}>Pedido</div>
+                                    <div className="col-md-6 col-sm-12 col-xs-12 btn btn-estado"onClick={()=>this.hideOrder()}>Estado</div>
                                 </div>
                                 
                                 <div className="row">
                                   {
                                       this.state.showOrder?
-                                   <Order order={this.state.order} name={this.state.name} handleChange={this.handleChange} total={this.state.total} deleteItem={this.deleteItem} submitToFirestore={this.submitToFirestore}/>
+                                   <Order order={this.state.order} name={this.state.name} handleChange={this.handleChange} total={this.state.total} deleteItem={this.deleteItem} submitToFirestore={this.submitToFirestore} clearOrder={this.clearOrder}/>
                                    :<OrderState/>
                                    } 
                                 </div>

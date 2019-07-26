@@ -29,7 +29,7 @@ class TemplateChef extends Component{
                             this.state.showOrderToChef?
                             <OrderToChef/>
                             :
-                            <div></div> 
+                            null
                         }   
                         </div>
                     </div>

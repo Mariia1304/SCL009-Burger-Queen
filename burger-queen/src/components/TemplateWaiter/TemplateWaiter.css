@@ -104,12 +104,22 @@
     width: 100%;
 }
 .btn-order{
+    width: 100%;
     font-family: 'Russo One', sans-serif;
     background: #f2d388;
     color:#874c62;
 }
 .btn-order:focus, .btn-order:hover{
     color:#c98474;
+}
+.btn-limpiar{
+    background: #A7D2CB;
+    width: 90%;
+    font-family: 'Russo One', sans-serif;
+    color: #874c62
+}
+.btn-limpiar:focus, .btn-limpiar:hover{
+    color: #c98474;
 }
 table{
     font-size: 13px;
@@ -133,10 +143,12 @@ table{
     width:5%; 
 }
 .total{
+    font-size: 2em;
     width: 85%;
 }
 .totalPriceOrder{
     width: 15%;
+    font-size: 2em;
 }
 .delete{
     width: 100%;

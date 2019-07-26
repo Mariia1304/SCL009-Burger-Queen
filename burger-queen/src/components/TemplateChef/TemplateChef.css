@@ -1,10 +1,10 @@
 .btn-pedidosChef{
     margin-top:1em;
     margin-bottom: 1em;
-    background:#874c62;
+    background:#f2d388;
     font-size: 1.2em;
     font-family: 'Russo One', sans-serif;
-    color:#A7D2CB;
+    color:#874c62;
     border: solid 1px;
 }
 .btn-pedidosChef:hover,.btn-pedidosChef:focus{

@@ -8,17 +8,17 @@ class Lunch extends Component{
             <div className="almuerzo col-12">
                                     <div className="row">
                                    
-                                    {Menu.lunch.hamburger.map(el=><div className="col-4"><Button key={el.item} class={el.class} image={el.image} price={el.price} item={el.item} itemAndPriceToOrder={this.props.itemAndPriceToOrder}/> </div>)}
+                                    {Menu.lunch.hamburger.map(el=><div key={el.item} className="col-4"><Button key={el.item} class={el.class} image={el.image} price={el.price} item={el.item} itemAndPriceToOrder={this.props.itemAndPriceToOrder}/> </div>)}
                                     </div>
                                     <div className="row">
-                                        {Menu.lunch.extra.map(el=><div className="col-6"><Button key={el.item}  class={el.class} image={el.image} price={el.price} item={el.item} itemAndPriceToOrder={this.props.itemAndPriceToOrder}/> </div>)}
+                                        {Menu.lunch.extra.map(el=><div key={el.item} className="col-6"><Button key={el.item}  class={el.class} image={el.image} price={el.price} item={el.item} itemAndPriceToOrder={this.props.itemAndPriceToOrder}/> </div>)}
                                        
                                     </div>
                                     <div className="row">
-                                    {Menu.lunch.accompaniments.map(el=><div className="col-6"><Button key={el.item}  class={el.class} image={el.image} price={el.price} item={el.item} itemAndPriceToOrder={this.props.itemAndPriceToOrder}/> </div>)}
+                                    {Menu.lunch.accompaniments.map(el=><div key={el.item} className="col-6"><Button key={el.item}  class={el.class} image={el.image} price={el.price} item={el.item} itemAndPriceToOrder={this.props.itemAndPriceToOrder}/> </div>)}
                                     </div>
                                     <div className="row">
-                                    {Menu.lunch.drink.map(el=><div className="col-3"><Button key={el.item} class={el.class} image={el.image} price={el.price} item={el.item} itemAndPriceToOrder={this.props.itemAndPriceToOrder}/> </div>)}
+                                    {Menu.lunch.drink.map(el=><div key={el.item} className="col-3"><Button key={el.item} class={el.class} image={el.image} price={el.price} item={el.item} itemAndPriceToOrder={this.props.itemAndPriceToOrder}/> </div>)}
                                     </div> 
                                 </div>
         )

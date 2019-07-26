@@ -5,12 +5,9 @@ import { Link } from 'react-router-dom';
 class Header extends Component {
     render(){
         return(
-            <div className="Header">
+            <div className="Header container">
                 <div className="row">
-                    
-                       <Link to='/'> <img src={logo} width="90" height="60" alt="logo"/></Link>  
-                    
-                    <h1>Burger Queen</h1>
+                       <Link to='/'><img src={logo} width="400" height="60" alt="logo"/></Link>  
                 </div>  
             </div>
           
