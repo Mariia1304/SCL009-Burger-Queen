@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/SCL009-Burger-Queen/static/css/main.892aaf80.chunk.css",
+    "main.js": "/SCL009-Burger-Queen/static/js/main.99f82a56.chunk.js",
+    "main.js.map": "/SCL009-Burger-Queen/static/js/main.99f82a56.chunk.js.map",
+    "runtime~main.js": "/SCL009-Burger-Queen/static/js/runtime~main.bfb50733.js",
+    "runtime~main.js.map": "/SCL009-Burger-Queen/static/js/runtime~main.bfb50733.js.map",
+    "static/css/2.22a7d4ef.chunk.css": "/SCL009-Burger-Queen/static/css/2.22a7d4ef.chunk.css",
+    "static/js/2.208dab5a.chunk.js": "/SCL009-Burger-Queen/static/js/2.208dab5a.chunk.js",
+    "static/js/2.208dab5a.chunk.js.map": "/SCL009-Burger-Queen/static/js/2.208dab5a.chunk.js.map",
+    "index.html": "/SCL009-Burger-Queen/index.html",
+    "precache-manifest.6475f66e4021e68bff1ddf2452a80bfe.js": "/SCL009-Burger-Queen/precache-manifest.6475f66e4021e68bff1ddf2452a80bfe.js",
+    "service-worker.js": "/SCL009-Burger-Queen/service-worker.js",
+    "static/css/2.22a7d4ef.chunk.css.map": "/SCL009-Burger-Queen/static/css/2.22a7d4ef.chunk.css.map",
+    "static/css/main.892aaf80.chunk.css.map": "/SCL009-Burger-Queen/static/css/main.892aaf80.chunk.css.map",
+    "static/media/cheese.png": "/SCL009-Burger-Queen/static/media/cheese.a5ebf8e3.png",
+    "static/media/coffee-cup.svg": "/SCL009-Burger-Queen/static/media/coffee-cup.9928aa87.svg",
+    "static/media/coffee.svg": "/SCL009-Burger-Queen/static/media/coffee.77188531.svg",
+    "static/media/delete.svg": "/SCL009-Burger-Queen/static/media/delete.d4798137.svg",
+    "static/media/egg3.png": "/SCL009-Burger-Queen/static/media/egg3.bfa1f5f6.png",
+    "static/media/egg4.png": "/SCL009-Burger-Queen/static/media/egg4.9e5bed6b.png",
+    "static/media/fried-potatoes.png": "/SCL009-Burger-Queen/static/media/fried-potatoes.538098af.png",
+    "static/media/fried-potatoes.svg": "/SCL009-Burger-Queen/static/media/fried-potatoes.7c195ba7.svg",
+    "static/media/logo.png": "/SCL009-Burger-Queen/static/media/logo.6ec1a978.png",
+    "static/media/onion-rings.svg": "/SCL009-Burger-Queen/static/media/onion-rings.4560aecb.svg",
+    "static/media/onion-rings.png": "/SCL009-Burger-Queen/static/media/onion-rings.57647f91.png",
+    "static/media/orange-juice.svg": "/SCL009-Burger-Queen/static/media/orange-juice.9ab21488.svg",
+    "static/media/water.svg": "/SCL009-Burger-Queen/static/media/water.fff6b4a3.svg"
+  }
+}
