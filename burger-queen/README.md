@@ -1,68 +1,88 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Burger Queen 🍔🍟
 
-## Available Scripts
+De acuerdo a la solicitud de la cadena de comida Burger Queen, se crea esta aplicación desarrollada para usar en tablet; que permite a los meseros realizar la toma de pedidos de los clientes, enviando este pedido a la cocina; siendo visualizados para su elaboración e indicar cuando esten terminados, y por último, permitir a los meseros visualizar los pedidos terminados para poder entregar a los clientes, indicando este cambio en el sistema.
 
-In the project directory, you can run:
+## Planificación 🚀
 
-### `npm start`
+La planificación fue realizada en trello, la cual puedes revisar [aqui](https://trello.com/b/LR7m7g45/burger-queen).
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Criterios de aceptación del proyecto
+Definición del producto
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+A partir de la información obtenida del product owner, nacen 3 historias de usuario que describen las necesidades de los usuarios, buscando cubrirlas a partir de la definición de terminado y los criterios de aceptación de cada una de ellas.
 
-### `npm test`
+HU1: Mesero/a debe poder tomar orden de una persona
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Yo como mesero o mesera debería poder tomar la orden de un cliente para saber fácilmente cuanto cobrar y que la cocina tenga las órdenes de manera inmediata y según cuando van llegando.
 
-### `npm run build`
+Definición de terminado:
+- Anotar nombre de cliente.
+- Agregar productos al pedido.
+- Eliminar productos.
+- Ver resumen y el total de la compra.
+- Enviar pedido a cocina (guardar en alguna base de datos).
+- Se ve y funciona bien en una tablet.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+HU2: Jefe de cocina debe poder ver ordenes
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Yo como cocinero o cocinera debería poder ver las órdenes de los clientes y marcar cuales están listas para saber qué se debe cocinar y avisar al mesero que una orden está lista.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Definición de terminado:
+- Ver los pedidos ordenados según van llegando.
+- Marcar los pedidos que se han terminado.
+- Ver el tiempo que tomó el pedido.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+HU3: Mesero/a debe poder ver órdenes listas para servir para entregarlas a los clientes.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Yo como mesero o mesera debería poder ver las órdenes que han sido cocinadas y están listas para servir a los clientes, para así entregarlas y que el cliente se vaya feliz con su comida.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Definición de terminado:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Ver listado de órdenes enviadas a cocina.
+- Marcar pedidos que han sido entregados.
 
-## Learn More
+Los criterios de aceptación son iguales para las tres historias, siendo los siguientes:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Recibir code review de al menos una compañera.
+- Hiciste tests de usabilidad e incorporar el feedback del mesero o mesera.
+- Haces test unitarios y has testeado tu producto por tu cuenta.
+- Desplegar la aplicación y etiquetar la versión desplegada (git tag).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Prototipado ✏️
 
-### Code Splitting
+Una vez reconocido el usuario, comienza el proceso creativo de prototipo de baja fidelidad, destacando las principales vistas:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- Realizar pedido por parte del mesero.
+- Ver los pedidos pendientes desde la cocina.
+- Ver los pedidos listos para entrega.
 
-### Analyzing the Bundle Size
+Tambien se realizo un prototipo de alta fidelidad en figma, puedes verlo aqui [Prototipo](https://www.figma.com/file/PgS7ElOxyfy4tDboH4qQCyWi/burger-queen?node-id=0%3A1)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
+## Consideraciones de desarrollo 🛠️
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Ejecución del interfaz de usuario HTML, CSS, JS.
 
-### Advanced Configuration
+ - La lógica del proyecto fue implementada usando HTML, CSS (usando como framework React-Bootstrap y la librería de javascript React.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Implementación de la interfaz
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+- Se usó firebase como plataforma de desarrollo, para poder registrar los pedidos realizados y actualizar el estado del pedido (pendiente, entregar, entregado).
+- Creación de componentes, reutilizables en el desarrollo de la aplicación.
+- Creación de template, de acuerdo a las vistas a utilizar.
+- Manejo de estilos CSS pensado en mobile first; usando react bootstrap.
+- Implementación de code review.
+- Trabajo respaldado mediante el uso de Git y GitHub, realizando realeses por historia de usuarios.
+- Deploy con gh-pages de la aplicación Burger Queen.
 
-### `npm run build` fails to minify
+## Futuras mejoras ⌨️
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## Autoras 📌
+Maria Chernysheva
+
+Dharma 
+
+Betsi Salas
