@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './Breakfast.css';
 import Button from '../Button/Button'
-import Menu from '../../data/menu';
+import Menu from '../../data/menu'; 
 
-class Breakfast extends Component{
+class Breakfast extends Component{ 
     render(){
         return(
             <div className="desayuno col-12">

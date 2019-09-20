@@ -37,3 +37,18 @@
     width: 8em;
 
 }
+@media (max-width: 425px) {
+    .mesero{
+        padding:1rem;
+        text-align: center;
+    }
+    .cocinero{
+        padding:1rem;
+        text-align: center;
+    }
+    .img-mesero, .img-cocinero{
+        height: 3em;
+        width: 3em;
+    
+    }
+}

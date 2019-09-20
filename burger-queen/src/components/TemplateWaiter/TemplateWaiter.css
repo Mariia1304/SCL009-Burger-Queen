@@ -154,3 +154,9 @@ table{
     width: 100%;
 }
 /* estado de pedidos */
+@media (max-width: 425px) {
+    .margin:nth-child(1){
+        margin-top: 20px;
+       
+    }
+}

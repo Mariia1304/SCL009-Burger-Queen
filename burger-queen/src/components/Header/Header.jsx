@@ -7,7 +7,8 @@ class Header extends Component {
         return(
             <div className="Header container">
                 <div className="row">
-                       <Link to='/'><img src={logo} width="400" height="60" alt="logo"/></Link>  
+                       <Link to='/'><img className="img-fluid" src={logo} 
+                     alt="logo"/></Link>  
                 </div>  
             </div>
           
