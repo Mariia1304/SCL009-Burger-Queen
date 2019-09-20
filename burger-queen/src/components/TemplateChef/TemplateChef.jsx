@@ -26,7 +26,7 @@ class TemplateChef extends Component{
                 </div>
                 
                     <div className="row">
-                        <div className="col-12">
+                        <div className="col-md-7 col-12">
                         {
                             this.state.showOrderToChef?
                             <OrderToChef/>

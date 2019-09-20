@@ -30,20 +30,21 @@ class OrderToChef extends Component{
                         <h6>{new Date(order.data.date).toLocaleString()}</h6>
                     </div>
                 </div>
-                <table className="col-4">
+                <table className="col-8">
                     <tbody>
                     {
                         order.data.orderList.map(el=>
                         <tr>
                             <td>{el.item}</td>
+                           
                             <td>{el.quantity}</td>
                         </tr>
                         ) 
                     }
-                    </tbody>
+                    </tbody> 
                 </table>
                 <div className="row">
-                    <div className="col-2 offset-10">
+                    <div className="col-2">
                         <button className="btn btn-listo">
                             Listo!
                         </button>
